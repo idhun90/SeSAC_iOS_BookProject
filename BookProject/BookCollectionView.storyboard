@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fez-9K-UAC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BIN-Cu-6fe">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BIN-Cu-6fe">
                             <size key="itemSize" width="237" height="249"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -30,8 +30,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="237" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도서 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ct-cT-oBL">
-                                            <rect key="frame" x="20" y="20" width="197" height="30"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4T-1Q-G5m">
+                                            <rect key="frame" x="0.0" y="0.0" width="237" height="249"/>
+                                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도서 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ct-cT-oBL">
+                                            <rect key="frame" x="20" y="10" width="197" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="QhA-Ea-re4"/>
                                             </constraints>
@@ -40,14 +44,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HBK-gG-E5G">
-                                            <rect key="frame" x="73" y="85" width="164" height="164"/>
+                                            <rect key="frame" x="48" y="60" width="189" height="189"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="HBK-gG-E5G" secondAttribute="height" multiplier="1:1" id="Q6i-g9-bGR"/>
-                                                <constraint firstAttribute="height" constant="164" id="gE5-di-OyP"/>
+                                                <constraint firstAttribute="width" secondItem="HBK-gG-E5G" secondAttribute="height" multiplier="1:1" id="WFR-J0-Edv"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa8-B9-n0n">
-                                            <rect key="frame" x="20" y="53" width="21" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa8-B9-n0n">
+                                            <rect key="frame" x="20" y="43" width="21" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="iOI-K7-zhz"/>
                                             </constraints>
@@ -57,11 +60,16 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="5Ct-cT-oBL" firstAttribute="top" secondItem="4CJ-Xv-ZjX" secondAttribute="top" constant="20" id="VTa-bF-mEx"/>
+                                        <constraint firstAttribute="trailing" secondItem="f4T-1Q-G5m" secondAttribute="trailing" id="FiS-b6-aOx"/>
+                                        <constraint firstItem="HBK-gG-E5G" firstAttribute="top" secondItem="5Ct-cT-oBL" secondAttribute="bottom" constant="20" id="GGm-6C-XW4"/>
+                                        <constraint firstItem="5Ct-cT-oBL" firstAttribute="top" secondItem="4CJ-Xv-ZjX" secondAttribute="top" constant="10" id="VTa-bF-mEx"/>
+                                        <constraint firstItem="f4T-1Q-G5m" firstAttribute="top" secondItem="4CJ-Xv-ZjX" secondAttribute="top" id="a8G-UE-gRZ"/>
                                         <constraint firstItem="5Ct-cT-oBL" firstAttribute="leading" secondItem="4CJ-Xv-ZjX" secondAttribute="leading" constant="20" id="cne-eN-MZH"/>
                                         <constraint firstAttribute="trailing" secondItem="5Ct-cT-oBL" secondAttribute="trailing" constant="20" id="eYT-SX-4LC"/>
                                         <constraint firstItem="Oa8-B9-n0n" firstAttribute="top" secondItem="5Ct-cT-oBL" secondAttribute="bottom" constant="3" id="hAw-Sg-ejF"/>
+                                        <constraint firstItem="f4T-1Q-G5m" firstAttribute="leading" secondItem="4CJ-Xv-ZjX" secondAttribute="leading" id="j4Y-IV-7I8"/>
                                         <constraint firstItem="Oa8-B9-n0n" firstAttribute="leading" secondItem="5Ct-cT-oBL" secondAttribute="leading" id="prA-VQ-ymx"/>
+                                        <constraint firstAttribute="bottom" secondItem="f4T-1Q-G5m" secondAttribute="bottom" id="qGh-jd-zLv"/>
                                         <constraint firstAttribute="trailing" secondItem="HBK-gG-E5G" secondAttribute="trailing" id="sP7-eJ-b3N"/>
                                         <constraint firstAttribute="bottom" secondItem="HBK-gG-E5G" secondAttribute="bottom" id="y6s-te-3Zn"/>
                                     </constraints>
@@ -70,6 +78,7 @@
                                 <connections>
                                     <outlet property="bookImageView" destination="HBK-gG-E5G" id="6tu-i4-45c"/>
                                     <outlet property="bookNameLabel" destination="5Ct-cT-oBL" id="v4h-za-G70"/>
+                                    <outlet property="defaultView" destination="f4T-1Q-G5m" id="CFU-cb-Erd"/>
                                     <outlet property="rateLabel" destination="Oa8-B9-n0n" id="4He-9i-1U9"/>
                                 </connections>
                             </collectionViewCell>
@@ -79,9 +88,6 @@
                             <outlet property="delegate" destination="Fez-9K-UAC" id="0Vr-uq-dg7"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <outlet property="contentView" destination="4CJ-Xv-ZjX" id="VZm-vR-ZJW"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crC-gn-m9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +97,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
