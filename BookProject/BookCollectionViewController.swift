@@ -9,12 +9,12 @@ class BookCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 7
+        let spacing: CGFloat = 4
         let width = UIScreen.main.bounds.width / 2 - (spacing * 3)
         layout.itemSize = CGSize(width: width, height: width)
         layout.scrollDirection = .vertical
-        layout.minimumInteritemSpacing = spacing
-        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
         layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
         layout.collectionView?.layer.cornerRadius = 10
         layout.collectionView?.layer.masksToBounds = true
