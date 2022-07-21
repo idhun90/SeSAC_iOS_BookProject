@@ -15,8 +15,8 @@ class BookCollectionViewController: UICollectionViewController {
         
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = 10
-        let itemCount = 2 // 한 라인에 표시될 아이템 카운트 상수로 할당
-        let width = ((UIScreen.main.bounds.width - (spacing * 3)) / 2)
+        let itemCount: CGFloat = 2 // 한 라인에 표시될 아이템 카운트 상수로 할당
+        let width = (UIScreen.main.bounds.width - (spacing * (itemCount + 1))) / 2
         layout.itemSize = CGSize(width: width, height: width)
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = spacing
