@@ -30,21 +30,20 @@ class BookCollectionViewController: UICollectionViewController {
         collectionView.collectionViewLayout = layout
     }
     
-    //SearchPage 이동
+//    SearchPage 이동
     @objc func presentSearchPage() {
-        
+
         // 해당 스토리보드 파일 찾기
         let sb = UIStoryboard(name: "BookCollectionView", bundle: nil)
         // 스토리보드 파일에서 원하는 뷰컨트롤러 찾기
         let vc = sb.instantiateViewController(withIdentifier: SearchViewController.id) as! SearchViewController
-        
+
         // SearchPage 네비게이션 임베디드
         let nav = UINavigationController(rootViewController: vc)
         nav.modalPresentationStyle = .fullScreen
-        
+
         // 화면 전환
         self.present(nav, animated: true)
-        
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
