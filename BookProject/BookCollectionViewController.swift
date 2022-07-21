@@ -10,6 +10,8 @@ class BookCollectionViewController: UICollectionViewController {
         
         
         navigationItem.title = "도서"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .search, target: self, action: #selector(presentSearchPage))
         navigationItem.rightBarButtonItem?.tintColor = .gray
         
@@ -32,7 +34,7 @@ class BookCollectionViewController: UICollectionViewController {
     @objc func presentSearchPage() {
         
         // 해당 스토리보드 파일 찾기
-        let sb = UIStoryboard.init(name: "BookCollectionView", bundle: nil)
+        let sb = UIStoryboard(name: "BookCollectionView", bundle: nil)
         // 스토리보드 파일에서 원하는 뷰컨트롤러 찾기
         let vc = sb.instantiateViewController(withIdentifier: SearchViewController.id) as! SearchViewController
         

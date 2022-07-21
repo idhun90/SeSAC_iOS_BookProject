@@ -36,7 +36,7 @@
                                             <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도서 이름" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ct-cT-oBL">
-                                            <rect key="frame" x="20" y="10" width="197" height="30"/>
+                                            <rect key="frame" x="10" y="10" width="207" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="QhA-Ea-re4"/>
                                             </constraints>
@@ -51,7 +51,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa8-B9-n0n">
-                                            <rect key="frame" x="20" y="43" width="21" height="20"/>
+                                            <rect key="frame" x="10" y="43" width="21" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="iOI-K7-zhz"/>
                                             </constraints>
@@ -65,7 +65,7 @@
                                         <constraint firstItem="HBK-gG-E5G" firstAttribute="top" secondItem="5Ct-cT-oBL" secondAttribute="bottom" constant="20" id="GGm-6C-XW4"/>
                                         <constraint firstItem="5Ct-cT-oBL" firstAttribute="top" secondItem="4CJ-Xv-ZjX" secondAttribute="top" constant="10" id="VTa-bF-mEx"/>
                                         <constraint firstItem="f4T-1Q-G5m" firstAttribute="top" secondItem="4CJ-Xv-ZjX" secondAttribute="top" id="a8G-UE-gRZ"/>
-                                        <constraint firstItem="5Ct-cT-oBL" firstAttribute="leading" secondItem="4CJ-Xv-ZjX" secondAttribute="leading" constant="20" id="cne-eN-MZH"/>
+                                        <constraint firstItem="5Ct-cT-oBL" firstAttribute="leading" secondItem="4CJ-Xv-ZjX" secondAttribute="leading" constant="10" id="cne-eN-MZH"/>
                                         <constraint firstAttribute="trailing" secondItem="5Ct-cT-oBL" secondAttribute="trailing" constant="20" id="eYT-SX-4LC"/>
                                         <constraint firstItem="Oa8-B9-n0n" firstAttribute="top" secondItem="5Ct-cT-oBL" secondAttribute="bottom" constant="3" id="hAw-Sg-ejF"/>
                                         <constraint firstItem="f4T-1Q-G5m" firstAttribute="leading" secondItem="4CJ-Xv-ZjX" secondAttribute="leading" id="j4Y-IV-7I8"/>
@@ -145,15 +145,6 @@
                     <view key="view" contentMode="scaleToFill" id="FEH-GB-yYV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push로 화면 전환할 웹 보여주는 뷰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wp9-rj-jse">
-                                <rect key="frame" x="89" y="161" width="237" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CJM-VI-rUc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -168,8 +159,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imq-tY-mqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VKf-Cj-EGz" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mKY-Cz-7mB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mKY-Cz-7mB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
