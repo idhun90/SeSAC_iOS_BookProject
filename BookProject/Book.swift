@@ -11,4 +11,5 @@ struct Book {
     var name: String
     var rate: Double
     var post: String
+
 }

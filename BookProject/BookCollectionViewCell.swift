@@ -20,6 +20,7 @@ class BookCollectionViewCell: UICollectionViewCell {
         bookImageView.contentMode = .scaleAspectFill
         bookImageView.layer.cornerRadius = 5 // masktoBounds false여도 된다!
         
+        
         // Data
         bookImageView.image = UIImage(named: data.post)
         bookNameLabel.text = data.name
